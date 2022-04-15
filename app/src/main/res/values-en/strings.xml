@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="logo">Weather</string>
+    <string name="hint_user_field">Enter city</string>
+    <string name="main_btn">Check the weather</string>
+    <string name="no_user_input">Enter city</string>
+    <string name="optional">Или воспользуйтесь </string>
+    <string name="location">геолокацией</string>
+</resources>

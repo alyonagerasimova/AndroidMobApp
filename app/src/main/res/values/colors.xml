@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#333</color>
+    <color name="colorPrimary">#FFFFFFFF</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#00000000</color>
     <color name="colorAccept">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
-    <color name="textColor">#FFFFFFFF</color>
-    <color name="textColorHint">#CCC</color>
+    <color name="textColor">#000</color>
+    <color name="textColorLink">#4E60FF</color>
+    <color name="textColorHint">#D0D0D0</color>
 </resources>

@@ -1,17 +1,23 @@
 package com.mobdev.todo;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.material.datepicker.MaterialDatePicker;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -23,32 +29,30 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
 
     private EditText userField;
     private Button mainBtn;
+    private TextView viewMap;
     private TextView resultInfo;
-    private Button pickDateButton;
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         userField = findViewById(R.id.user_field);
         mainBtn = findViewById(R.id.main_btn);
+        viewMap = findViewById(R.id.view_map);
         resultInfo = findViewById(R.id.result_info);
-        pickDateButton = findViewById(R.id.pick_date_button);
 
-        MaterialDatePicker.Builder<Long> dateBuilder = MaterialDatePicker.Builder.datePicker();
-        dateBuilder.setTitleText("Выберете дату");
-        final MaterialDatePicker<Long> materialDatePicker = dateBuilder.build();
+//        isGooglePlayServicesAvailable() //проверить наличие сервисов Google Play на устройстве
 
-        pickDateButton.setOnClickListener(view ->
-                materialDatePicker.show(getSupportFragmentManager(), "MATERIAL_DATE_PICKER"));
-
-        materialDatePicker.addOnPositiveButtonClickListener(selection ->
-                pickDateButton.setText(materialDatePicker.getHeaderText()));
+        viewMap.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+            startActivity(intent);
+        });
 
         mainBtn.setOnClickListener(view -> {
             if (userField.getText().toString().trim().equals(""))

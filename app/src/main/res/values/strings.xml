@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">ToDo</string>
+    <string name="app_name">Погода</string>
     <string name="logo">Погода</string>
     <string name="hint_user_field">Введите город</string>
     <string name="main_btn">Узнать погоду</string>
     <string name="no_user_input">Введите город</string>
-    <string name="select_date">Выберете дату</string>
+    <string name="optional">Или воспользуйтесь</string>
+    <string name="location">геолокацией</string>
 </resources>
