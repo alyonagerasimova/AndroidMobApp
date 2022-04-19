@@ -11,21 +11,20 @@ class MyLocationListener implements LocationListener {
 
     static Location imHere;
 
-    public static Location SetUpLocationListener(Context context)
+    public static void SetUpLocationListener(Context context)
     {
         LocationManager locationManager = (LocationManager)
                 context.getSystemService(Context.LOCATION_SERVICE);
 
         LocationListener locationListener = new MyLocationListener();
 
-        locationManager.requestLocationUpdates(
-                LocationManager.GPS_PROVIDER,
-                5000,
-                10,
-                locationListener);
+//        locationManager.requestLocationUpdates(
+//                LocationManager.GPS_PROVIDER,
+//                5000,
+//                10,
+//                locationListener);
 
-        imHere = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-        return imHere;
+//        imHere = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
     }
 
     @Override
