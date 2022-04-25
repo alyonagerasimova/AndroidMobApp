@@ -124,7 +124,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/first_temp"
+            android:id="@+id/first_day_of_week"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="27dp"
@@ -220,7 +220,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/temp_of_second_day"
+            android:id="@+id/second_day_of_week"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="27dp"
@@ -239,7 +239,7 @@
             app:srcCompat="@drawable/ic_launcher_foreground" />
 
         <TextView
-            android:id="@+id/second_day_of_week"
+            android:id="@+id/temp_of_second_day"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="14dp"
@@ -315,7 +315,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/temp_of_third_day"
+            android:id="@+id/third_day_of_week"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="27dp"
@@ -334,7 +334,7 @@
             app:srcCompat="@drawable/ic_launcher_foreground" />
 
         <TextView
-            android:id="@+id/third_day_of_week"
+            android:id="@+id/temp_of_third_day"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="14dp"
@@ -410,7 +410,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/temp_of_fourth_day"
+            android:id="@+id/fourth_day_of_week"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="27dp"
@@ -429,7 +429,7 @@
             app:srcCompat="@drawable/ic_launcher_foreground" />
 
         <TextView
-            android:id="@+id/fourth_day_of_week"
+            android:id="@+id/temp_of_fourth_day"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="14dp"
