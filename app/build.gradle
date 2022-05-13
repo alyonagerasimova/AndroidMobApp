@@ -6,6 +6,12 @@ plugins {
 android {
     compileSdk 32
 
+    allprojects {
+        buildDir = "C:/tmp/${rootProject.name}/${project.name}"
+        repositories {
+        }
+    }
+
     defaultConfig {
         applicationId "com.mobdev.todo"
         minSdk 21
